@@ -1,5 +1,7 @@
 # Page Walker
 
+[![NPM version](https://img.shields.io/npm/v/page-walker.svg?style=flat-square)](https://www.npmjs.com/package/page-walker)
+
 As simple as:
 
 ```javascript
