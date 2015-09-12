@@ -1,13 +1,13 @@
 {
   "name": "page-walker",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "gulpfile.babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "EGOIST",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^5.8.24",
     "gulp": "^3.9.0",
