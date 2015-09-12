@@ -35,7 +35,11 @@ gulp.task('babel', () => {
 
 gulp.task('jade', () => {
   gulp.src(paths.jade.src)
-    .pipe(jade())
+    .pipe(jade({
+      locals: {
+        time: Date.now()
+      }
+    }))
     .pipe(gulp.dest('.'))
 })
 

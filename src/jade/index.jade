@@ -5,13 +5,11 @@ html
     title Page Walker
     link(rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css")
     style.
-      .main {
+      body {
         font-family: Hack, serif;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+      }
+      .m {
+        height: 100vmin;
         text-align: center;
         padding-top: 160px;
       }
@@ -21,12 +19,24 @@ html
       h2 {
         font-size: 20px;
       }
+      .end {
+        text-align: center;
+        padding: 20px 0 120px 0;
+        font-size: 18px;
+      }
   body(style="height: 3000px")
-    .main
+    .m
       h1 Page Walker
       h2 
         | &lt;Just scroll and watch me dance/&gt;
-    script(src="./page-walker.js")
+    .m(style="top:100vmin")
+      h2 No matter how far you go, I know
+    .m(style="top:200vmin")
+      h2 You are the one who has no limits
+    .m(style="top:300vmin")
+      h2 Trough, or killed, or bounce higher
+    .end &lt;God knows/&gt;
+    script(src="./page-walker.js?time=#{time}")
     script.
       console.log('hi!')
       PageWalker.watch()
